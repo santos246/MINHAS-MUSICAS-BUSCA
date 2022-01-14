@@ -21,43 +21,6 @@ A:hover {text-decoration:underline;color:#999999;}
 <!--------------------------------------------------------->
 <h1>MINHAS MUSICAS BUSCA</h1>
 <!---------------------------------------------------------------------->
-<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-<script type="text/javascript">
-jQuery(window).load(function($){
-atualizaRelogio();
-});
-</script>
-</HEAD>
-<BODY>
-<div>
-<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
-</div>
-<div>
-<output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>				
-</div>			
-</BODY>
-<script>
-function atualizaRelogio(){ 
-var momentoAtual = new Date();
-var vhora = momentoAtual.getHours();
-var vminuto = momentoAtual.getMinutes();
-var vsegundo = momentoAtual.getSeconds();
-var vdia = momentoAtual.getDate();
-var vmes = momentoAtual.getMonth() + 1;
-var vano = momentoAtual.getFullYear();
-if (vdia < 10){ vdia = "0" + vdia;}
-if (vmes < 10){ vmes = "0" + vmes;}
-if (vhora < 10){ vhora = "0" + vhora;}
-if (vminuto < 10){ vminuto = "0" + vminuto;}
-if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
-dataFormat = vdia + " / " + vmes + " / " + vano;
-horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
-document.getElementById("data").innerHTML = dataFormat;
-document.getElementById("hora").innerHTML = horaFormat;
-setTimeout("atualizaRelogio()",1000);
-}
-</script>	
-</HTML>
 <!---_______________________________________________________________--><hr/>
 <HR SIZE="7">
 <HR WIDTH="80%">
@@ -119,7 +82,7 @@ setTimeout("atualizaRelogio()",1000);
 <!--------------------------------------------------------->
 <!--------------------------------------------------------->
 <li><b>
-Raça Negra - As melhores(SAMBA/COLETANEA>
+Raça Negra - As melhores(SAMBA/COLETANEA)
 <b/><br/><audio controls><source src="
 https://www.googleapis.com/drive/v3/files/10F3CEsloHCu8XkK0HVqC4BI639T9lsZE?alt=media&key=AIzaSyCKN01YADpHeKX5_sO5KhC0XyYYiHQoV_c
 " type="audio/ogg"><source src="
